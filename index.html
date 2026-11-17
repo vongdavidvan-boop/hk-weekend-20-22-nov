@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hong Kong Weekend, 20–22 November 2026</title>
+<meta name="description" content="An unofficial curated weekend magazine: a major musical, official WinterFest lights, drama, concerts and stand-up comedy in Hong Kong, Friday 20 through Sunday 22 November 2026.">
+<meta name="theme-color" content="#F3EEE4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,8..144,400;0,8..144,600;1,8..144,400;1,8..144,500&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #F3EEE4;
+  --ink: #1A1612;
+  --muted: #5C554C;
+  --soft: #8A8176;
+  --rule: #D4CBBC;
+  --accent: #9A1E2C;
+  --callout: #EBE4D6;
+  --title: #5C463C;
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Newsreader, "Noto Serif CJK HK", "Songti SC", "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent); }
+.hero {
+  position: relative;
+  min-height: 100svh;
+  color: #F6F1E8;
+}
+.hero img {
+  width: 100%;
+  height: 100svh;
+  object-fit: cover;
+  object-position: center 20%;
+}
+.hero-shade {
+  position: absolute; inset: auto 0 0 0; height: 62%;
+  background: linear-gradient(to top, rgba(8,6,5,.92), rgba(8,6,5,.35) 55%, transparent);
+}
+.hero-copy {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 1.5rem 1.25rem calc(1.75rem + env(safe-area-inset-bottom));
+}
+.mast {
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-size: .7rem;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #E8C9A8;
+  margin: 0 0 .7rem;
+}
+h1 {
+  font-family: "Playfair Display", Newsreader, serif;
+  font-weight: 500;
+  font-size: clamp(2.6rem, 10vw, 3.4rem);
+  line-height: .95;
+  margin: 0 0 1rem;
+}
+h1 em { font-style: italic; display: block; }
+.dek {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.45;
+  margin: 0;
+  color: #E8E0D4;
+  max-width: 28rem;
+}
+.wrap { width: min(40rem, calc(100% - 2.5rem)); margin: 0 auto; padding: 2.25rem 0 3.5rem; }
+.letter-label, .sec-label, .wl, .kicker {
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: .7rem;
+  margin: 0 0 .75rem;
+}
+.etype {
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-size: 0.875rem;
+  margin: 0 0 .75rem;
+}
+section.sec > .sec-label {
+  font-size: 1.5375rem;
+  line-height: 1.12;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin: 0 0 0.45rem;
+}
+.letter-label {
+  font-size: 0.63rem;
+}
+.letter blockquote {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.305rem;
+  line-height: 1.4;
+  margin: 0 0 1rem;
+}
+.cite {
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-size: 0.63rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--soft);
+  margin: 0 0 1.4rem;
+}
+.letter > p:not(.letter-label):not(.cite) {
+  font-size: 1.0125rem;
+}
+.callout, .worth {
+  background: var(--callout);
+  border-left: 3px solid var(--accent);
+  padding: .9rem 1rem;
+  margin: 1.25rem 0 0;
+}
+.callout p, .worth p { margin: .35rem 0 0; }
+nav.toc { margin: 0 0 2.75rem; }
+nav.toc a {
+  display: block;
+  color: var(--ink);
+  text-decoration: none;
+  padding: .75rem 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 1.05rem;
+}
+nav.toc .sec-label {
+  margin: 2.5rem 0 1.05rem;
+  font-size: 0.84rem;
+}
+nav.toc .sec-label:first-of-type { margin-top: 2.6rem; }
+nav.toc a span { color: var(--accent); font-family: "Instrument Sans", sans-serif; font-size: .8rem; letter-spacing: .06em; margin-right: .5rem; }
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0 0 .4rem;
+}
+.sec { margin: 2.75rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+.sec-dek { font-style: italic; color: var(--muted); margin: 0 0 1.5rem; }
+article.event { margin: 0 0 3.5rem; padding-bottom: 2.4rem; border-bottom: 1px solid var(--rule); }
+.event .kicker { color: var(--soft); font-weight: 500; margin: .2rem 0 .5rem; }
+.event h3 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.55rem;
+  line-height: 1.25;
+  margin: 0 0 .55rem;
+}
+.show { font-weight: 600; font-size: 1.25rem; line-height: 1.35; margin: 0 0 .85rem; color: var(--title); }
+dl.facts { margin: 0 0 1rem; padding: .7rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+dl.facts div { display: grid; grid-template-columns: 5.2rem 1fr; gap: .4rem; margin: .35rem 0; }
+dt {
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-size: .68rem;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--soft);
+  padding-top: .2rem;
+}
+dd { margin: 0; }
+.fig { margin: 0 0 1.1rem; }
+.fig figcaption {
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-size: .75rem;
+  color: var(--soft);
+  margin: .45rem 0 0;
+  line-height: 1.4;
+}
+.book {
+  display: inline-block;
+  margin-top: 1rem;
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-size: .9rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  text-decoration: none;
+  padding: .7rem 1rem;
+  border-radius: 2px;
+}
+
+.airy-list {
+  margin: 0.35rem 0 1.15rem;
+  padding-left: 1.2em;
+}
+.airy-list li {
+  margin: 0 0 0.7em;
+  padding: 0;
+  line-height: 1.55;
+}
+.airy-list li:last-child { margin-bottom: 0; }
+
+footer {
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-size: .8rem;
+  color: var(--soft);
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+.sources a { display: block; margin: .35rem 0; word-break: break-all; font-size: .9rem; }
+
+/* Sticky category navigation, website only */
+.catnav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: max(1.25rem, env(safe-area-inset-left));
+  padding-right: max(1.25rem, env(safe-area-inset-right));
+}
+.catnav {
+  display: flex;
+  gap: .4rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: .55rem 0;
+}
+.catnav::-webkit-scrollbar { display: none; }
+.catnav a {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: .4rem .75rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+.catnav a:hover, .catnav a:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+#cat-theatre, #cat-festival, #cat-comedy, #cat-concert, #cat-museum, #cat-film, #cat-later {
+  scroll-margin-top: 4.2rem;
+}
+
+/* Language toggle, website only */
+:root { --lang-bar-h: 3.1rem; }
+.lang-bar {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: var(--lang-bar-h);
+  padding: 0.35rem max(1.25rem, env(safe-area-inset-right)) 0.35rem max(1.25rem, env(safe-area-inset-left));
+  padding-top: max(0.35rem, env(safe-area-inset-top));
+}
+.kids-toggle {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  min-height: 2.2rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-family: "Instrument Sans", "Noto Sans CJK HK", "PingFang HK", system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.kids-toggle.is-active,
+.kids-toggle[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #F6F1E8;
+}
+.kids-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+html[lang="zh-Hant"] .kids-toggle {
+  letter-spacing: 0.06em;
+}
+html.is-kids .letter,
+html.is-kids .callout,
+html.is-kids .sec-dek {
+  display: none;
+}
+.lang-toggle {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+.lang-toggle button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+  min-height: 2.2rem;
+  min-width: 2.6rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-family: "Instrument Sans", "Noto Sans CJK HK", "PingFang HK", system-ui, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.lang-toggle button.is-active,
+.lang-toggle button[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #F6F1E8;
+}
+.lang-toggle button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.hero { min-height: calc(100svh - var(--lang-bar-h) - env(safe-area-inset-top, 0px)); }
+.hero img { height: calc(100svh - var(--lang-bar-h) - env(safe-area-inset-top, 0px)); }
+.catnav-wrap {
+  top: calc(var(--lang-bar-h) + env(safe-area-inset-top, 0px));
+}
+#cat-theatre, #cat-festival, #cat-comedy, #cat-concert, #cat-museum, #cat-film, #cat-later,
+#letter, #ev-01, #ev-02, #ev-03, #ev-04, #ev-05, #ev-06, #ev-07, #ev-08, #ev-09, #ev-10,
+#ev-11, #ev-12, #ev-13, #ev-14, #ev-15, #ev-16, #ev-17, #ev-18, #ev-19 {
+  scroll-margin-top: calc(var(--lang-bar-h) + 4.4rem + env(safe-area-inset-top, 0px));
+}
+
+/* Traditional Chinese typography: keep size, ease tracking on Latin-style labels */
+html[lang="zh-Hant"] body {
+  font-family: "Noto Serif CJK HK", "Noto Serif CJK TC", "Songti SC", "Songti TC", "PingFang HK", "PMingLiU", Newsreader, serif;
+  line-height: 1.7;
+}
+html[lang="zh-Hant"] .mast,
+html[lang="zh-Hant"] .letter-label,
+html[lang="zh-Hant"] .sec-label,
+html[lang="zh-Hant"] .wl,
+html[lang="zh-Hant"] .kicker,
+html[lang="zh-Hant"] .etype,
+html[lang="zh-Hant"] .cite,
+html[lang="zh-Hant"] dt,
+html[lang="zh-Hant"] .lang-toggle button {
+  letter-spacing: 0.06em;
+  text-transform: none;
+}
+html[lang="zh-Hant"] h1,
+html[lang="zh-Hant"] .letter blockquote,
+html[lang="zh-Hant"] .event h3 {
+  font-family: "Noto Serif CJK HK", "Noto Serif CJK TC", "Songti SC", "Playfair Display", Newsreader, serif;
+  font-style: normal;
+}
+html[lang="fr"] .etype,
+html[lang="fr"] .sec-label,
+html[lang="fr"] .letter-label {
+  letter-spacing: 0.1em;
+}
+</style>
+</head>
+<body>
+<div class="lang-bar">
+  <button type="button" class="kids-toggle" data-toggle-kids aria-pressed="false" data-i18n="kids.label" data-i18n-aria="kids.aria" aria-label="Show only kids-friendly events">Kids-friendly</button>
+  <nav class="lang-toggle" data-i18n-aria="lang.aria" aria-label="Language">
+    <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+    <button type="button" data-set-lang="fr" aria-pressed="false">FR</button>
+    <button type="button" data-set-lang="zh" aria-pressed="false">ZH</button>
+  </nav>
+</div>
+<header class="hero">
+  <img src="img/cover.jpg" data-i18n-alt="Official promotional still from LACRIMA: a couture atelier of white gowns and worktables. WestK / Cityline." alt="Official promotional still from LACRIMA: a couture atelier of white gowns and worktables. WestK / Cityline.">
+  <div class="hero-shade"></div>
+  <div class="hero-copy">
+    <p class="mast" data-i18n="mast">An unofficial weekend magazine · 20–22 November 2026</p>
+    <h1><span data-i18n="h1.city">Hong Kong</span><em data-i18n="h1.weekend">Weekend</em></h1>
+    <p class="dek" data-i18n="dek">A golden ticket at the Cultural Centre, a couture tragedy at West Kowloon, official WinterFest lights already on, the 55th French Film Festival mid-run, jazz on the harbour lawns, and Atsuko Okatsuka’s bowl cut out at the airport.</p>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="letter" id="letter">
+  <p class="letter-label" data-i18n="letter.label">Editor’s letter</p>
+  <blockquote data-i18n="letter.quote">Friday, the official WinterFest lights are already up in Central and Tsim Sha Tsui, and Roald Dahl’s Charlie and the Chocolate Factory is at the Cultural Centre. The 55th Hong Kong French Film Festival is mid-run. Saturday, jazz at Freespace, and Charlie again in the afternoon and evening. Sunday, a nearly three-hour French drama at West Kowloon, a new Cantonese musical at City Hall, and two stand-up comedy bills you cannot reasonably do in the same evening. This is not every event in the city. It is a weekend you could actually have.</blockquote>
+  <p class="cite" data-i18n="letter.cite">Compiled Tuesday 17 November 2026, Asia/Hong Kong (UTC+8)</p>
+  <p data-i18n="letter.standfirst">An unofficial magazine letter, drawn from official calendars and venue pages. Programmes change. Use the linked page before you set out. This is not a government or tourism-board product.</p>
+  <div class="callout">
+    <p class="wl" data-i18n="sunday.title">A note on Sunday night</p>
+    <p data-i18n="sunday.body">Biswa Kalyan Rath takes the Hong Kong Jockey Club Amphitheatre at the Academy for Performing Arts at 7:30pm. Atsuko Okatsuka takes AsiaWorld-Expo, Runway 11, at 8pm. They are not a double bill. Pick one, and leave time for the Airport Express if you go west.</p>
+  </div>
+</section>
+
+<nav class="toc" data-i18n-aria="toc.aria" aria-label="This weekend">
+  <p class="sec-label" data-i18n="toc.weekend">This weekend</p>
+  <a href="#ev-01"><span>01</span> <span data-i18n="toc.01">Charlie and the Chocolate Factory, Broadway International Group Limited</span></a>
+  <a href="#ev-02"><span>02</span> <span data-i18n="toc.02">LACRIMA, Théâtre national de Strasbourg</span></a>
+  <a href="#ev-03"><span>03</span> <span data-i18n="toc.03">Operation Oops!, Hong Kong Repertory Theatre</span></a>
+  <a href="#ev-04"><span>04</span> <span data-i18n="toc.04">Hong Kong WinterFest</span></a>
+  <a href="#ev-05"><span>05</span> <span data-i18n="toc.05">Atsuko Okatsuka</span></a>
+  <a href="#ev-06"><span>06</span> <span data-i18n="toc.06">Biswa Kalyan Rath</span></a>
+  <a href="#ev-07"><span>07</span> <span data-i18n="toc.07">WestK Jazz Fest</span></a>
+  <a href="#ev-08"><span>08</span> <span data-i18n="toc.08">Anne Imhof, House of Swans, Tai Kwun</span></a>
+  <a href="#ev-09"><span>09</span> <span data-i18n="toc.09">Myths and Monsters: The Art of Fantasy in Asia, M+</span></a>
+  <a href="#ev-10"><span>10</span> <span data-i18n="toc.10">Qing Court in Four Seasons, Hong Kong Palace Museum</span></a>
+  <a href="#ev-19"><span>11</span> <span data-i18n="toc.19">Hong Kong French Film Festival</span></a>
+  <p class="sec-label" data-i18n="toc.later">Coming Up</p>
+  <a href="#ev-11"><span>12</span> <span data-i18n="toc.11">Gigi Leung, LOVE Gigi</span></a>
+  <a href="#ev-12"><span>13</span> <span data-i18n="toc.12">India by the Bay</span></a>
+  <a href="#ev-13"><span>14</span> <span data-i18n="toc.13">1587, A Year of No Significance, Zuni Icosahedron</span></a>
+  <a href="#ev-14"><span>15</span> <span data-i18n="toc.14">Clockenflap</span></a>
+  <a href="#ev-15"><span>16</span> <span data-i18n="toc.15">MIRROR “12 AS 1”</span></a>
+  <a href="#ev-16"><span>17</span> <span data-i18n="toc.16">Aaron Kwok, New Year</span></a>
+  <a href="#ev-17"><span>18</span> <span data-i18n="toc.17">Lang Lang</span></a>
+  <a href="#ev-18"><span>19</span> <span data-i18n="toc.18">Joey Yung, AURA</span></a>
+</nav>
+
+
+<div class="catnav-wrap">
+<nav class="catnav" data-i18n-aria="catnav.aria" aria-label="Categories">
+  <a href="#cat-theatre" data-i18n="catnav.theatre">Theatre</a>
+  <a href="#cat-festival" data-i18n="catnav.festival">Festival</a>
+  <a href="#cat-comedy" data-i18n="catnav.comedy">Stand-up comedy</a>
+  <a href="#cat-concert" data-i18n="catnav.concert">Concert</a>
+  <a href="#cat-museum" data-i18n="catnav.museum">Museum</a>
+  <a href="#cat-film" data-i18n="catnav.film">Film</a>
+  <a href="#cat-later" data-i18n="catnav.later">Coming Up</a>
+</nav>
+</div>
+
+<section class="sec" id="cat-theatre">
+  <p class="sec-label" data-i18n="sec.theatre">Theatre</p>
+  <p class="sec-dek" data-i18n="sec.theatre.dek">A major musical, a couture tragedy, and a new Cantonese musical open the weekend.</p>
+  <figure class="fig" data-kids="yes"><img src="img/charlie.jpg" data-i18n-alt="Official promotional collage for Roald Dahl’s Charlie and the Chocolate Factory, with the English and Chinese titles and stage scenes." alt="Official promotional collage for Roald Dahl’s Charlie and the Chocolate Factory, with the English and Chinese titles and stage scenes."><figcaption data-i18n="cap.charlie">Official promotional image for Roald Dahl’s Charlie and the Chocolate Factory. charliemusicalhk.com.</figcaption></figure>
+  <article class="event" id="ev-01" data-kids="yes">
+    <p class="etype" data-i18n="cat.musical">Musical</p>
+    <p class="kicker" data-i18n="kicker.01">Friday evening through Sunday, Tsim Sha Tsui</p>
+    <h3 data-i18n="hook.01">A golden ticket, still on Salisbury Road.</h3>
+    <p class="show" data-i18n="show.01">Roald Dahl’s Charlie and the Chocolate Factory</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.01">Fri 20 Nov, 7:30pm; Sat 21 Nov, 2:30pm and 7:30pm; Sun 22 Nov, 11:30am and 4:30pm. 145 minutes, including a 20-minute intermission.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.01">Grand Theatre, Hong Kong Cultural Centre, 10 Salisbury Road, Tsim Sha Tsui</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.01">Tickets from HK$388 to $1,288. Weekend performances from $488 to $1,288; weekdays from $388 to $1,088, with concession bands listed on the URBTIX November calendar.</dd></div></dl>
+    <p data-i18n="body.01">Based on Roald Dahl’s novel, Charlie Bucket’s golden-ticket adventure into Willy Wonka’s chocolate factory: chocolate rivers, nut-sorting squirrels and mischievous Oompa-Loompas, with eye-popping visuals and music. Performed in English with Traditional Chinese surtitles. Broadway International Group Limited presents the run, 4 November to 6 December. Eight final shows have been added. Daniel Plimpton plays Willy Wonka; Charlie Bucket is shared by Leo Caravano and Oliver Wong.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.01">Recommended for ages 6 and above. Children under 14 must be accompanied by an adult at all times. Children aged 3 or below will not be admitted. Arrive 30 minutes early; late arrivals may have to wait for an appropriate moment. No recording until the final curtain call.</p></div>
+    <a class="book" href="https://charliemusicalhk.com/" data-i18n="book.official_tickets">Official page and tickets</a>
+  </article>
+
+<figure class="fig"><img src="img/hero-lacrima.jpg" data-i18n-alt="Official promotional still from LACRIMA." alt="Official promotional still from LACRIMA."><figcaption data-i18n="cap.lacrima">Official promotional image for Caroline Guiela Nguyen: LACRIMA, WestK / Cityline.</figcaption></figure>
+  <article class="event" id="ev-02">
+    <p class="etype" data-i18n="cat.theatre">Theatre</p>
+    <p class="kicker" data-i18n="kicker.02">Friday night and Sunday afternoon, West Kowloon</p>
+    <h3 data-i18n="hook.02">The wedding gown, and what it costs.</h3>
+    <p class="show" data-i18n="show.02">Caroline Guiela Nguyen, LACRIMA</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.02">Fri 20 Nov, 7:45pm; Sun 22 Nov, 3:00pm. About 2 hours 55 minutes, without a conventional intermission.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.02">Grand Theatre, Xiqu Centre, WestK</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.02">Standard HK$580 / $480 / $380 / $280; concessions $377 / $312 / $247 / $182</dd></div></dl>
+    <p data-i18n="body.02">A Paris house is sworn to a hundred years of silence over a royal wedding dress. Nguyen follows the people who actually make it. Live cameras throw every stitch onto a split screen. Performed in French, Tamil, English and French Sign Language, with English and Chinese surtitles.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.02">Children under 15 are not admitted. The production includes depictions of psychological and physical violence, and of suicide. There is only a three-minute break in a nearly three-hour sitting. Arrive 15 minutes early.</p></div>
+    <a class="book" href="https://cultural.cityline.com.hk/en/2026/lacrima.html" data-i18n="book.cityline">Book on Cityline</a>
+  </article>
+
+<article class="event" id="ev-03">
+    <p class="etype" data-i18n="cat.theatre">Theatre</p>
+    <p class="kicker" data-i18n="kicker.03">Sunday evening, City Hall, and then into December</p>
+    <h3 data-i18n="hook.03">Help you buy a flat? Or kidnap you into one?</h3>
+    <p class="show" data-i18n="show.03">Operation Oops!, the Musical</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.03">Opens Sun 22 Nov, 7:45pm, and runs to 13 Dec. This Sunday is the evening show with Jordan Cheng, Clinton Zhang, Christopher Ying, Tunes Ting, Simon Lou and ManMan Kwok.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.03">Theatre, Hong Kong City Hall</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.03">HK$630 (limited VIP) / $580 / $460 / $360</dd></div></dl>
+    <p data-i18n="body.03">A property scheme collapses into a half-baked kidnapping. Playwright Leung Yu-lim adapts his own novel; Leon Ko and director Fong Chun-kit turn the mess into a Cantonese musical, with Chinese and English surtitles. Two casts share the run.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.03">Sunday is opening night. Tickets are on Cityline / URBTIX.</p></div>
+    <a class="book" href="https://www.hkrep.com/sc/Season-Programme/Main-Stage-Productions/Operation-Oops.html" data-i18n="book.hkrep">Official HKRep page</a>
+  </article>
+</section>
+
+<section class="sec" id="cat-festival">
+  <p class="sec-label" data-i18n="sec.festival">Festival</p>
+  <p class="sec-dek" data-i18n="sec.festival.dek">The official WinterFest lights are already on in Central and Tsim Sha Tsui.</p>
+  <figure class="fig" data-kids="yes"><img src="img/winterfest.jpg" data-i18n-alt="Official image of Hong Kong WinterFest Christmas Town in Central: a 22-metre Christmas tree at Statue Square Gardens, with hot-air balloon decorations." alt="Official image of Hong Kong WinterFest Christmas Town in Central: a 22-metre Christmas tree at Statue Square Gardens, with hot-air balloon decorations."><figcaption data-i18n="cap.winterfest">Christmas Town at Statue Square Gardens, Central. Official image, Hong Kong Tourism Board.</figcaption></figure>
+  <article class="event" id="ev-04" data-kids="yes">
+    <p class="etype" data-i18n="cat.festival">Festival</p>
+    <p class="kicker" data-i18n="kicker.04">Already lit, Central and Tsim Sha Tsui, Causeway Bay next week</p>
+    <h3 data-i18n="hook.04">The official lights are already on.</h3>
+    <p class="show" data-i18n="show.04">Hong Kong WinterFest</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.04">This weekend, and through early January. Central Christmas Town: Fri 20 Nov, 4pm–11:30pm; Sat 21 and Sun 22 Nov, 11am–11:30pm. Central light show: 7pm–11pm daily, every 30 minutes. Tsim Sha Tsui light show: 7pm–11pm daily.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.04">Christmas Town at Statue Square Gardens (North and South), Des Voeux Road Central (MTR Central, Exit K). Tsim Sha Tsui light shows at the Hong Kong Cultural Centre, Museum of Art and Space Museum; watch from the Cultural Centre Viewing Deck and the museum exteriors.</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.04">Free admission to Christmas Town and the light shows.</dd></div></dl>
+    <p data-i18n="body.04a">The Hong Kong Tourism Board is staging Hong Kong WinterFest from 18 November 2026 to 5 January 2027, expanded this year to three Winter Wonderlands: Central, Tsim Sha Tsui and Causeway Bay. This weekend, Central and Tsim Sha Tsui are already open.</p>
+    <p data-i18n="body.04b">In Central, a 22-metre Christmas tree anchors Christmas Town at Statue Square Gardens, with displays, interactive booths, a Hot Air Balloon Terminal and a Christmas Express Station. Santa appears on selected days. Which days this weekend are not listed. The Christmas Town lights come on from 6pm daily; last admission is 30 minutes before closing. The light show runs 7pm–11pm, every 30 minutes, across buildings including the Bank of China Building and Tower, Hong Kong City Hall (High Block), the Hong Kong Club Building, HSBC Main Building, Mandarin Oriental, Prince’s Building, Standard Chartered Bank Building and the Court of Final Appeal Building. Crowd control may apply.</p>
+    <p data-i18n="body.04c">Across the harbour, Prudential Hong Kong Winter Wonderland in Tsim Sha Tsui makes its debut: projection mapping at the Hong Kong Cultural Centre, the Museum of Art and the Space Museum, and a Christmas concert inspired by the northern lights. The Hong Kong Tourism Board’s official announcement also names the Clock Tower and “The Stars of Christmas Concert.”</p>
+    <p data-i18n="body.04d">Look ahead: Winter Wonderland in Causeway Bay, in collaboration with Hysan, opens 25 November and runs to 3 January 2027 in the Lee Gardens area, from Hysan Place on Hennessy Road to Lee Garden Six on Leighton Road. The light show runs 7pm–10pm. “Elves’ Night Out” Outdoor Bar is 8–10pm on 25 November, then 5:30pm–10pm from 26 November to 3 January. The Christmas market is listed only as mid-December 2026. MTR Causeway Bay, Exit F2.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.04">Admission is free. Santa’s days this weekend are not listed, and the Causeway Bay market is dated only as mid-December. Central and Tsim Sha Tsui run to 5 January; Causeway Bay to 3 January. Extended late nights around Christmas and New Year are on the official pages.</p></div>
+    <a class="book" href="https://www.discoverhongkong.com/eng/events/hong-kong-winterfest.html" data-i18n="book.winterfest">Official WinterFest pages</a>
+  </article>
+</section>
+
+<section class="sec" id="cat-comedy">
+  <p class="sec-label" data-i18n="sec.comedy">Stand-up comedy</p>
+  <p class="sec-dek" data-i18n="sec.comedy.dek">Two bills on Sunday night, and you cannot reasonably do both.</p>
+<figure class="fig"><img src="img/atsuko.jpg" data-i18n-alt="Official AsiaWorld-Expo image for Atsuko Okatsuka, The Big Bowl Tour." alt="Official AsiaWorld-Expo image for Atsuko Okatsuka, The Big Bowl Tour."><figcaption data-i18n="cap.atsuko">Official promotional image, AsiaWorld-Expo.</figcaption></figure>
+  <article class="event" id="ev-05">
+    <p class="etype" data-i18n="cat.standup">Stand-up comedy</p>
+    <p class="kicker" data-i18n="kicker.05">Sunday night, the airport</p>
+    <h3 data-i18n="hook.05">The bowl cut returns to the runway.</h3>
+    <p class="show" data-i18n="show.05">Atsuko Okatsuka, The Big Bowl Tour</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.05">Sun 22 Nov, 8:00pm</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.05">AsiaWorld-Expo, Runway 11 (Hall 11), Chek Lap Kok</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.05">All seated, HK$780 / $680 / $580</dd></div></dl>
+    <p data-i18n="body.05" data-i18n-html="true">Atsuko Okatsuka is a comedian and actress, known for the specials <em>Father</em> and <em>The Intruder</em>, and for the bowl cut this tour is named for. She returns to Hong Kong for one night at AsiaWorld-Expo’s Runway 11, presented by Clockenflap Presents and Bohm Presents.</em>, <em>The Intruder</em>, and the haircut the tour is named for.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.05">Only audiences aged 15 or above are admitted. Bags are discouraged; expect a metal-detector check. Official tickets are sold on Ticketflap. The Airport Express stops at AsiaWorld-Expo.</p></div>
+    <a class="book" href="https://www.asiaworld-expo.com/en-us/whats-on/upcoming-events/events/atsuko-okatsuka-comedy-show-in-hong-kong-2026/" data-i18n="book.official_tickets">Official page and tickets</a>
+  </article>
+
+<figure class="fig"><img src="img/biswa.jpg" data-i18n-alt="Official image for Biswa Kalyan Rath in Hong Kong." alt="Official image for Biswa Kalyan Rath in Hong Kong."><figcaption data-i18n="cap.biswa">Official promotional image, Cityline.</figcaption></figure>
+  <article class="event" id="ev-06">
+    <p class="etype" data-i18n="cat.standup">Stand-up comedy</p>
+    <p class="kicker" data-i18n="kicker.06">Sunday evening, Wan Chai</p>
+    <h3 data-i18n="hook.06">An evening of laughter, before the machines clock on.</h3>
+    <p class="show" data-i18n="show.06">Biswa Kalyan Rath, Inventions</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.06">Sun 22 Nov, 7:30pm</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.06">Hong Kong Jockey Club Amphitheatre, HKAPA</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.06">HK$500</dd></div></dl>
+    <p data-i18n="body.06" data-i18n-html="true">Biswa Kalyan Rath is an Indian stand-up comedian who broke through with Pretentious Movie Reviews on YouTube and the special <em>Biswa Mast Aadmi</em>, then made the web series <em>Laakhon Mein Ek</em>, about India’s IIT coaching industry. Later specials include <em>Sushi</em> and <em>Mood Kharab</em>, the latter filmed at London’s Soho Theatre. His world-tour set, <em>Inventions</em>, is English-language stand-up on human inventions and his signature rants, after sold-out dates in North America and India.</em>, then made the web series <em>Laakhon Mein Ek</em>, about India’s IIT coaching industry. Later specials include <em>Sushi</em> and <em>Mood Kharab</em>, the latter filmed at London’s Soho Theatre. His world-tour set, <em>Inventions</em>, is English-language stand-up on human inventions and his signature rants, after sold-out dates in North America and India.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.06">Persons below 16 will not be admitted. Phones must be put away. Same Sunday night as Atsuko at AsiaWorld-Expo. They are not a double bill.</p></div>
+    <a class="book" href="https://cultural.cityline.com/en/2026/biswakalyanrath.html" data-i18n="book.cityline">Book on Cityline</a>
+  </article>
+</section>
+
+<section class="sec" id="cat-concert">
+  <p class="sec-label" data-i18n="sec.concert">Concert</p>
+  <p class="sec-dek" data-i18n="sec.concert.dek">Jazz still has a weekend left on the harbour lawns.</p>
+<figure class="fig"><img src="img/jazzfest.jpg" data-i18n-alt="Official promotional image for Cathay · WestK Jazz Fest." alt="Official promotional image for Cathay · WestK Jazz Fest."><figcaption data-i18n="cap.jazz">Official promotional image, Cathay · WestK Jazz Fest.</figcaption></figure>
+  <article class="event" id="ev-07">
+    <p class="etype" data-i18n="cat.concert">Concert</p>
+    <p class="kicker" data-i18n="kicker.07">West Kowloon, all weekend</p>
+    <h3 data-i18n="hook.07">Jazz, still, on the harbour lawns.</h3>
+    <p class="show" data-i18n="show.07">Cathay · WestK Jazz Fest</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.07">13–24 Nov, including this Friday through Sunday, then a final night on Tuesday 24 Nov.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.07">Xiqu Centre, The Box at Freespace, Wonderland, and the Art Park lawns</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.07">Ticketed and free programmes. Cityline charges HK$12 per ticket online.</dd></div></dl>
+    <p data-i18n="body.07">Cathay · WestK Jazz Fest is the West Kowloon Cultural District’s jazz festival: ticketed indoor concerts and free outdoor sets on the Art Park lawns. The eighth edition still has a weekend left. Francesca Tandoi is at The Box, Freespace, on Sunday 22 Nov at 8pm, tickets HK$400. Saturday at The Box is listed as JACE at 3pm and Teriver Cheung at 8pm (HK$580), with free outdoor sets in Art Park. Confirm remaining seats and the free timetable on Cityline before you go.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.07">Children under 6 are not admitted to ticketed programmes. Kenny G is listed for the festival’s last night, Tuesday 24 Nov, at Wonderland. Confirm remaining seats on Cityline.</p></div>
+    <a class="book" href="https://cultural.cityline.com.hk/en/2026/jazzfest2026.html" data-i18n="book.jazz">Festival tickets on Cityline</a>
+  </article>
+</section>
+
+<section class="sec" id="cat-museum">
+  <p class="sec-label" data-i18n="sec.museum">Museum</p>
+  <p class="sec-dek" data-i18n="sec.museum.dek">An Imhof exhibition at Tai Kwun, fantasy at M+, and a Qing court year at the Palace Museum.</p>
+<figure class="fig"><img src="img/swans.jpg" data-i18n-alt="House of Swans performance at Tai Kwun." alt="House of Swans performance at Tai Kwun."><figcaption data-i18n="cap.swans">Anne Imhof: House of Swans. Official photograph, Tai Kwun; photo by Nadine Franczkowski, with Hong Kong Ballet.</figcaption></figure>
+  <article class="event" id="ev-08">
+    <p class="etype" data-i18n="cat.exhibition">Exhibition and performance</p>
+    <p class="kicker" data-i18n="kicker.08">Tai Kwun, Saturday and Sunday</p>
+    <h3 data-i18n="hook.08">The swans are still in the galleries.</h3>
+    <p class="show" data-i18n="show.08">Anne Imhof, House of Swans</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.08">Exhibition 25 Sep 2026–3 Jan 2027, Tue–Sun, 11am–7pm. Hong Kong Ballet this weekend: Sat 21 and Sun 22 Nov, 2:30–3:15pm and 3:45–4:30pm.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.08">JC Contemporary, Tai Kwun</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.08">HK$50 regular / $40 concession. Multi-entry pass HK$90.</dd></div></dl>
+    <p data-i18n="body.08">Anne Imhof is a German artist, based between Berlin and New York, whose work brings together performance, choreography, painting, music and installation. She became widely known in 2017, when Faust, her work for the German Pavilion at the Venice Biennale, won the Golden Lion for Best National Participation. House of Swans is her first major solo exhibition in Asia, still charging the rooms at Tai Kwun: oil, bronze, ballet and a city that has come slightly unstuck. The work is set in an imagined future, following a heroine struggling on her path to love through a chaotic cityscape, with Hong Kong Ballet in the galleries at those two weekend sittings. If you want the dance as well as the installation, those are the hours.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.08">The exhibition runs deep into the new year, but the ballet slots are timed. Check the live Tai Kwun page for remaining performance tickets.</p></div>
+    <a class="book" href="https://www.taikwun.hk/en/whats-on/detail/anne-imhof-house-of-swans/1776" data-i18n="book.taikwun">Tai Kwun page</a>
+  </article>
+
+<figure class="fig" data-kids="yes"><img src="img/mplus-myths.jpg" data-i18n-alt="Myths and Monsters at M+." alt="Myths and Monsters at M+."><figcaption data-i18n="cap.mplus">Myths and Monsters: The Art of Fantasy in Asia, 2026. Photo: Lok Cheng. Image courtesy of M+, Hong Kong.</figcaption></figure>
+  <article class="event" id="ev-09" data-kids="yes">
+    <p class="etype" data-i18n="cat.museum">Museum</p>
+    <p class="kicker" data-i18n="kicker.09">West Kowloon, late on Friday</p>
+    <h3 data-i18n="hook.09">Myths, monsters, and a Friday until ten.</h3>
+    <p class="show" data-i18n="show.09">Myths and Monsters at M+</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.09">17 Oct 2026–4 Apr 2027. This weekend: Friday 10am–10pm; Saturday and Sunday 10am–6pm. Closed Mondays.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.09">West Gallery, L2, M+. Also on: Design Ah!, through 10 Jan 2027.</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.09">Standard HK$190; concessions $100. Children 6 and under free.</dd></div></dl>
+    <p data-i18n="body.09">The exhibition runs from ukiyo-e, shadow puppets and Tibetan scrolls through Surrealism, manga, anime and the present: four chapters on fantasy as a tool in Asian visual culture, from the nineteenth century to now. It is the most generous night of the museum week on Friday, when M+ stays open until 10pm.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.09">Friday is the late night. Weekend days close at 6pm.</p></div>
+    <a class="book" href="https://www.mplus.org.hk/en/exhibitions/myths-and-monsters-the-art-of-fantasy-in-asia/" data-i18n="book.mplus">M+ exhibition page</a>
+  </article>
+
+<figure class="fig" data-kids="yes"><img src="img/hkpm-osmanthus.jpg" data-i18n-alt="Hanging screen with osmanthus and moon, Hong Kong Palace Museum." alt="Hanging screen with osmanthus and moon, Hong Kong Palace Museum."><figcaption data-i18n="cap.palace">From Qing Court in Four Seasons. Official image, Hong Kong Palace Museum.</figcaption></figure>
+  <article class="event" id="ev-10" data-kids="yes">
+    <p class="etype" data-i18n="cat.museum">Museum</p>
+    <p class="kicker" data-i18n="kicker.10">West Kowloon</p>
+    <h3 data-i18n="hook.10">A year inside the Qing court.</h3>
+    <p class="show" data-i18n="show.10">Qing Court in Four Seasons, Hong Kong Palace Museum</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.10">Opened 4 Nov 2026; listed through 3 Nov 2028. Friday and Saturday 10am–8pm; Sunday 10am–6pm.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.10">Gallery 2, Hong Kong Palace Museum</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.10">General admission HK$70; concession $35. Children 6 and under free.</dd></div></dl>
+    <p data-i18n="body.10">Jointly organised with the Palace Museum, the new Gallery 2 show walks a year of Qing court life through the seasons: the imperial calendar first, then spring tilling and weaving, summer at the Chengde Mountain Resort, autumn at the Mulan Hunting Grounds, and winter’s Lunar New Year. Some objects rotate through the two-year run, so what is on the wall this weekend may not be there in three months.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.10">Friday and Saturday give you the late hours, to 8pm. Pair it with M+ next door if you are already in West Kowloon. But M+ stays open until 10pm on Friday, and only until 6pm on Saturday and Sunday.</p></div>
+    <a class="book" href="https://www.hkpm.org.hk/sc/exhibition/qing-court-in-four-seasons-life-and-culture-of-the-imperial-household" data-i18n="book.palace">Palace Museum page</a>
+  </article>
+</section>
+
+
+<section class="sec" id="cat-film">
+  <p class="sec-label" data-i18n="sec.film">Film</p>
+  <p class="sec-dek" data-i18n="sec.film.dek">Hong Kong’s oldest film festival is mid-run, with a full official weekend still to book.</p>
+<figure class="fig"><img src="img/hkfff.jpg" data-i18n-alt="Official key image for the 55th Hong Kong French Film Festival: a woman in a burgundy period dress stands in stage smoke, one hand raised to her brow, with candlelight behind her." alt="Official key image for the 55th Hong Kong French Film Festival: a woman in a burgundy period dress stands in stage smoke, one hand raised to her brow, with candlelight behind her."><figcaption data-i18n="cap.hkfff">Official key image, Hong Kong French Film Festival / Alliance Française de Hong Kong.</figcaption></figure>
+  <article class="event" id="ev-19">
+    <p class="etype" data-i18n="cat.film">Film</p>
+    <p class="kicker" data-i18n="kicker.19">Through 9 December, around town</p>
+    <h3 data-i18n="hook.19">Hong Kong’s oldest film festival is mid-run, and still booking.</h3>
+    <p class="show" data-i18n="show.19">Hong Kong French Film Festival</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.19">This weekend, Fri 20–Sun 22 Nov, mid-run of 11 Nov–9 Dec 2026. Eighteen official screenings are listed across the weekend; Saturday’s De Gaulle (I) and Coward screenings at Premiere Elements are marked sold out on the official schedule.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.19">Premiere Elements in West Kowloon, PALACE ifc in Central, MOViE MOViE Pacific Place in Admiralty, Broadway Cinematheque in Yau Ma Tei, the Hong Kong Film Archive in Sai Wan Ho, the Black Box Theatre at the Jockey Club Creative Arts Centre, and other official venues on the festival schedule.</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.19">At City Hall and the Hong Kong Film Archive, regular tickets are HK$75, with listed concessions from $58. At PALACE ifc, regular tickets are listed at $110; at Broadway Cinematheque and Premiere Elements, at $95. Confirm other venues, and the screening you want, on the official ticketing page.</dd></div></dl>
+    <p data-i18n="body.19a">Alliance Française de Hong Kong has presented this festival since 1953, and the official history calls it the oldest film festival in the city. The 55th edition is already mid-run this weekend.</p>
+    <p data-i18n="body.19b">If you want the city looking back at you, start with French Frames in Hong Kong.</p>
+    <ul class="airy-list film-list">
+      <li data-i18n="film.19.01">Friday, 7:10pm, Premiere Elements: a new Phantom of the Opera.</li>
+      <li data-i18n="film.19.02">Friday, 7:30pm, MOViE MOViE Pacific Place: Louis Clichy’s Iron Boy, a Special Jury Prize from Un Certain Regard at Cannes.</li>
+      <li data-i18n="film.19.03">Saturday, 3:45pm, MOViE MOViE Pacific Place: a new Les Misérables.</li>
+      <li data-i18n="film.19.04">Saturday, 7pm, Hong Kong Film Archive: Philippe de Broca’s Chinese Adventures in China (Les tribulations d’un Chinois en Chine), with Jean-Paul Belmondo, in French with English subtitles.</li>
+      <li data-i18n="film.19.05">Saturday, Premiere Elements: the opening film, De Gaulle (I): Résistance, is listed as sold out.</li>
+      <li data-i18n="film.19.06">Sunday, 4pm, Premiere Elements: De Gaulle (II), Liberté.</li>
+      <li data-i18n="film.19.07">Sunday, 5:20pm, Broadway Cinematheque: Godard’s Contempt (Le Mépris), with Brigitte Bardot, in the official tribute to her.</li>
+      <li data-i18n="film.19.08">Sunday, 5:30pm, Hong Kong Film Archive: Jean-Marie Poiré’s The Guardian Angels (Les anges gardiens), with Gérard Depardieu and Christian Clavier, in French with English subtitles.</li>
+    </ul>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.19">The festival continues to 9 December. The official highlights page lists introduction sessions and a masterclass with Julien Rejl, artistic director of Directors’ Fortnight; the official programme includes Directors’ Fortnight Extended. Some films had not yet been classified when the programme went online; if a title is later rated Category III, the official ticketing page sets out refunds for ticket holders under 18. Check the official schedule before you set out. Saturday’s Coward screening at Premiere Elements is also listed as sold out.</p></div>
+    <a class="book" href="https://www.hkfrenchfilmfestival.com/" data-i18n="book.hkfff">Official festival site</a>
+  </article>
+</section>
+
+<section class="sec" id="cat-later">
+  <p class="sec-label" data-i18n="sec.later">Coming Up</p>
+  <p class="sec-dek" data-i18n="sec.later.dek">Announced well in advance, and worth booking before the weekend gets away from you.</p>
+<article class="event" id="ev-11">
+    <p class="etype" data-i18n="cat.concert">Concert</p>
+    <p class="kicker" data-i18n="kicker.11">The following weekend, Hung Hom</p>
+    <h3 data-i18n="hook.11">Gigi, under the Coliseum lights.</h3>
+    <p class="show" data-i18n="show.11">Gigi Leung, LOVE Gigi World Tour in Hong Kong 2026</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.11">Fri 27–Sun 29 Nov, 8:15pm</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.11">Hong Kong Coliseum</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.11">HK$1,180 / $780 / $480</dd></div></dl>
+    <p data-i18n="body.11">Gigi Leung is a Hong Kong singer and actress whose first Cantonese album, Love Myself, appeared in November 1996. This Coliseum run marks thirty years in the business and takes its title from that debut: three nights of the LOVE Gigi World Tour, 27–29 November, presented by Ovation Entertainment and its co-presenters. She has said the set will mix the Cantonese and Mandarin songs audiences have been asking for. If you want a seat, this is the week to book.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.11">Book through URBTIX: website, app, or 3166 1288.</p></div>
+    <a class="book" href="https://www.urbtix.hk" data-i18n="book.urbtix">Book on URBTIX</a>
+  </article>
+
+<article class="event" id="ev-12">
+    <p class="etype" data-i18n="cat.festival">Festival</p>
+    <p class="kicker" data-i18n="kicker.12">26–29 November</p>
+    <h3 data-i18n="hook.12">India, by the bay, for a fourth night.</h3>
+    <p class="show" data-i18n="show.12">India by the Bay 2026</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.12">Thu 26–Sun 29 Nov 2026</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.12">Venues are listed on the festival programme</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.12">Varies by event</dd></div></dl>
+    <p data-i18n="body.12">The eleventh edition: classical music and dance, books, cinema, food and craft, after a decade of India–Hong Kong collaboration. The official programme includes The Violin Trio, Padma Vibhushan awardee Dr. L. Subramaniam with his son Ambi Subramaniam and granddaughter Mahati Subramaniam, and Keelaka Dance Company’s Sakhi, a dance-theatre reimagining of Sita and Draupadi, both at Asia Society Hong Kong Center.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.12">Book through indiabythebay.com, not through a reseller, and confirm each venue on that site.</p></div>
+    <a class="book" href="https://indiabythebay.com/" data-i18n="book.india">indiabythebay.com</a>
+  </article>
+
+<article class="event" id="ev-13">
+    <p class="etype" data-i18n="cat.theatre">Theatre</p>
+    <p class="kicker" data-i18n="kicker.13">From 27 November, Sheung Wan</p>
+    <h3 data-i18n="hook.13">A year of no significance, according to the history books.</h3>
+    <p class="show" data-i18n="show.13">Zuni Icosahedron, 1587, A Year of No Significance</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.13">From 27 Nov, with dates into early December</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.13">Theatre, Sheung Wan Civic Centre</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.13">Most performances HK$380 / $280 / $200. Confirm the date you want on URBTIX</dd></div></dl>
+    <p data-i18n="body.13">Zuni returns to the Ming year that was supposed to have changed nothing. Adapted from Ray Huang’s 1981 book, with the family’s permission, the 2026 staging, directed by Mathias Woo, and enhanced with arts tech, follows six figures through 1587: the Wanli Emperor, Chang Chu-cheng, Shen Shih-hsing, Hai Rui, Ch’i Chi-kuang and Li Zhi. The production asks: when a vast country tries to replace skills and law with morals, does it predetermine its own demise?</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.13">Opening is the Friday after this one, 27 November. In Cantonese, with Chinese and English surtitles; about three hours, including a 15-minute intermission. Check the exact price tier for the date you want on URBTIX.</p></div>
+    <a class="book" href="https://www.urbtix.hk" data-i18n="book.urbtix">Book on URBTIX</a>
+  </article>
+
+<figure class="fig"><img src="img/clockenflap.jpg" data-i18n-alt="Official photograph of Clockenflap at the Central Harbourfront: a night crowd facing the main stage, with the Hong Kong skyline behind it." alt="Official photograph of Clockenflap at the Central Harbourfront: a night crowd facing the main stage, with the Hong Kong skyline behind it."><figcaption data-i18n="cap.clockenflap">Official photograph, Clockenflap, Central Harbourfront, 2025. Photo: Kennevia Photography.</figcaption></figure>
+<article class="event" id="ev-14">
+    <p class="etype" data-i18n="cat.festival">Festival</p>
+    <p class="kicker" data-i18n="kicker.14">4–6 December, the harbourfront</p>
+    <h3 data-i18n="hook.14">Keshi, Hayley Williams, Turnstile, and the harbour.</h3>
+    <p class="show" data-i18n="show.14">Clockenflap 2026</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.14">Fri 4–Sun 6 Dec 2026</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.14">Central Harbourfront Event Space, 9 Lung Wo Road</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.14">3-day HK$2,180; single day $1,380. Under-18: 3-day $1,680; single day $980. Children under 3 free.</dd></div></dl>
+    <p data-i18n="body.14">Clockenflap is Hong Kong’s outdoor music and arts festival, first held in 2008. It has grown into an iconic harbourfront weekend: several stages of international, regional and local acts set against the Central skyline, with art installations and a family programme as well as the music. This year’s edition is 4–6 December at the Central Harbourfront Event Space. Keshi headlines Friday, Hayley Williams Saturday, Turnstile Sunday, with Queens of the Stone Age, Slowdive, HYUKOH, The Jesus and Mary Chain, Kim Gordon, Digable Planets, Cheer Chen, N.Y.P.D. and many more. Ticketflap is the only authorised platform.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.14">Ticketflap is the only authorised platform. Entry needs your ticket and photo ID, and the name must match. Under-16s need a guardian over 18.</p></div>
+    <a class="book" href="https://www.ticketflap.com/clockenflap2026" data-i18n="book.ticketflap">Tickets on Ticketflap</a>
+  </article>
+
+<figure class="fig"><img src="img/mirror.jpg" data-i18n-alt="Official promotional image of the twelve MIRROR members in a doorway, for 12 AS 1 Live 2026." alt="Official promotional image of the twelve MIRROR members in a doorway, for 12 AS 1 Live 2026."><figcaption data-i18n="cap.mirror">Official promotional image, AsiaWorld-Expo, for MIRROR “12 AS 1” LIVE 2026.</figcaption></figure>
+  <article class="event" id="ev-15">
+    <p class="etype" data-i18n="cat.concert">Concert</p>
+    <p class="kicker" data-i18n="kicker.15">Mid-December, AsiaWorld-Expo</p>
+    <h3 data-i18n="hook.15">Twelve as one, for a long December.</h3>
+    <p class="show" data-i18n="show.15">MIRROR, “12 AS 1” LIVE 2026</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.15">11–13, 15–21 and 23–26 Dec 2026. An 8:15pm start is listed; confirm each night’s time on the venue page or Klook.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.15">AsiaWorld-Arena (Hall 1)</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.15">Seated HK$1,680 / $1,480 / $1,080 / $780. Official tickets via Klook.</dd></div></dl>
+    <p data-i18n="body.15">MIRROR is Hong Kong’s first large-scale local male singing-and-dancing group: twelve members who came out of ViuTV’s talent show King Maker and debuted on 3 November 2018. The name is meant to suggest that each can stand alone, and that together they reflect many possibilities. “12 AS 1” is the chance to see all twelve on one arena stage, eight years on, in a mid-December run at AsiaWorld-Arena that MakerVille frames as a December carnival. Confirm remaining seats before the festival weeks close in.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.15">Ages 6 and above; anyone under 16 must be accompanied by a parent or guardian.</p></div>
+    <a class="book" href="https://www.asiaworld-expo.com/en-us/whats-on/upcoming-events/events/mirror-live-in-hong-kong-2026/" data-i18n="book.asiaworld">Official AsiaWorld-Expo page</a>
+  </article>
+
+<figure class="fig"><img src="img/aaron.jpg" data-i18n-alt="Official promotional photograph of Aaron Kwok in a red suit, from the ICONIC MOMENT Live in Kai Tak 26/27 campaign." alt="Official promotional photograph of Aaron Kwok in a red suit, from the ICONIC MOMENT Live in Kai Tak 26/27 campaign."><figcaption data-i18n="cap.aaron">Official promotional photograph for ICONIC MOMENT Live in Kai Tak 26/27. Photo: Wing Shya.</figcaption></figure>
+<article class="event" id="ev-16">
+    <p class="etype" data-i18n="cat.concert">Concert</p>
+    <p class="kicker" data-i18n="kicker.16">New Year’s Eve, Kai Tak</p>
+    <h3 data-i18n="hook.16">A stadium, and the year turning.</h3>
+    <p class="show" data-i18n="show.16">Aaron Kwok, ICONIC MOMENT Live in Kai Tak 26/27</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.16">31 Dec 2026, 9:30pm; 1 Jan 2027, 7:30pm. Confirm remaining seats and the start time on the live Kai Tak page before you pay.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.kaitak">Kai Tak Stadium. Confirm on the Kai Tak Sports Park page</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.16">HK$480 / $680 / $980 / $1,180 / $1,380 / $1,680, through HK Ticketing and Damai. Confirm on the live Kai Tak page before you pay.</dd></div></dl>
+    <p data-i18n="body.16">Aaron Kwok is a singer, dancer and actor, and one of Cantopop’s Four Heavenly Kings, the four male stars who defined Hong Kong pop in the 1990s. ICONIC MOMENT is his first appearance at Kai Tak Stadium: a New Year’s Eve countdown on 31 December 2026 and a New Year’s Day concert on 1 January 2027, presented by FWD Insurance. Confirm remaining seats and the start time on the live Kai Tak page before you pay.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.16">Open the live Kai Tak Sports Park event page before you pay anyone else.</p></div>
+    <a class="book" href="https://www.kaitaksportspark.com.hk/events-tickets/fwd-insurance-presents-aaron-kwok-iconic-moment-live-in-kai-tak-26-27" data-i18n="book.kaitak">Kai Tak official page</a>
+  </article>
+
+<figure class="fig"><img src="img/langlang.jpg" data-i18n-alt="Official Lang Lang recital image." alt="Official Lang Lang recital image."><figcaption data-i18n="cap.langlang">Official promotional image, Hong Kong Philharmonic.</figcaption></figure>
+  <article class="event" id="ev-17">
+    <p class="etype" data-i18n="cat.concert">Concert</p>
+    <p class="kicker" data-i18n="kicker.17">13 January 2027, Tsim Sha Tsui</p>
+    <h3 data-i18n="hook.17">Lang Lang, alone, with Mozart to Liszt.</h3>
+    <p class="show" data-i18n="show.17">Lang Lang, The Hong Kong Recital</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.17">Wed 13 Jan 2027, 7:30pm. About two hours, with an intermission. Ages 6 and above.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.17">Hong Kong Cultural Centre Concert Hall</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.17">HK$1,980 / $1,480 / $980 / $480. URBTIX; maximum four tickets per transaction.</dd></div></dl>
+    <p data-i18n="body.17" data-i18n-html="true">Lang Lang, the Chinese pianist who played the opening ceremony of the 2008 Beijing Olympics and is among the most recognised classical soloists in the world, comes alone to the Cultural Centre Concert Hall on 13 January 2027. The programme: Mozart’s Rondo in D, Beethoven’s <em>Pathétique</em> and the late A-flat sonata, then Albéniz, Granados and Liszt. Book on the Philharmonic page or URBTIX; the cap is four tickets.</em> and the late A-flat sonata, then Albéniz, Granados and Liszt. Book on the Philharmonic page or URBTIX; the cap is four tickets.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.17">Remaining seats, if any, are on URBTIX. Maximum four tickets per transaction.</p></div>
+    <a class="book" href="https://www.hkphil.org/concert/lang-lang-piano-recital" data-i18n="book.hkphil">Hong Kong Philharmonic page</a>
+  </article>
+
+<article class="event" id="ev-18">
+    <p class="etype" data-i18n="cat.concert">Concert</p>
+    <p class="kicker" data-i18n="kicker.18">January 2027, Kai Tak</p>
+    <h3 data-i18n="hook.18">Joey, in the new stadium. Check the official page.</h3>
+    <p class="show" data-i18n="show.18">Joey Yung, AURA Tour</p>
+    <dl class="facts"><div><dt data-i18n="label.when">When</dt><dd data-i18n="when.18">18, 19, 22, 23 and 24 January 2027. A general sale for the added 19 and 24 January nights is listed from 18 Nov, 12:00 noon, on HK Ticketing and Damai. A 7:30pm start is listed for the nights named. Confirm remaining seats and the start time on the live Kai Tak page before you pay.</dd></div><div><dt data-i18n="label.where">Where</dt><dd data-i18n="where.kaitak">Kai Tak Stadium. Confirm on the Kai Tak Sports Park page</dd></div><div><dt data-i18n="label.price">Price</dt><dd data-i18n="price.18">HK$1,680 / $1,280 / $980 / $680. Confirm on the live Kai Tak page and its authorised ticketing partners.</dd></div></dl>
+    <p data-i18n="body.18">Joey Yung is one of the defining female voices of Hong Kong pop of the past two decades. Prudential presents her AURA Tour at Kai Tak Stadium across five January nights, 18, 19, 22, 23 and 24 January 2027, a return to a home stadium stage. A general sale for the added 19 and 24 January shows is listed from 18 November at noon, on HK Ticketing and Damai. Confirm remaining seats and the exact start time on the venue page before you pay.</p>
+    <div class="worth"><p class="wl" data-i18n="label.worth">Worth knowing</p><p data-i18n="worth.18">Go directly to the Kai Tak Sports Park event page, or to the authorised partners named there. If a sale or an added night is on, it will be there.</p></div>
+    <a class="book" href="https://www.kaitaksportspark.com.hk/events-tickets/prudential-presents-aura-tour-joey-yung" data-i18n="book.kaitak">Kai Tak official page</a>
+  </article>
+
+</section>
+
+<footer>
+  <p data-i18n="footer">Hong Kong Weekend · 20–22 November 2026 · An unofficial magazine letter. Programmes change. All times are Asia/Hong Kong (UTC+8).</p>
+</footer>
+</main>
+
+<script src="i18n.js"></script>
+<script>
+(function () {
+  var SUPPORTED = { en: "en", fr: "fr", zh: "zh", "zh-hant": "zh", "zh-hk": "zh", "zh-tw": "zh" };
+  function normalize(code) {
+    if (!code) return null;
+    var k = String(code).toLowerCase().replace("_", "-");
+    if (SUPPORTED[k]) return SUPPORTED[k];
+    var short = k.split("-")[0];
+    return SUPPORTED[short] || null;
+  }
+  function packFor(lang) {
+    lang = normalize(lang) || "en";
+    if (typeof window.HKWeekendI18N === "object" && window.HKWeekendI18N[lang]) return window.HKWeekendI18N[lang];
+    return (window.HKWeekendI18N && window.HKWeekendI18N.en) || {};
+  }
+  function currentLang() {
+    var params = new URLSearchParams(window.location.search);
+    var fromUrl = normalize(params.get("lang"));
+    if (fromUrl) return fromUrl;
+    try {
+      var stored = normalize(window.localStorage.getItem("hk-weekend-lang"));
+      if (stored) return stored;
+    } catch (e) {}
+    return "en";
+  }
+  function currentKids() {
+    var params = new URLSearchParams(window.location.search);
+    var q = params.get("kids");
+    if (q != null) return /^(1|true|yes|on)$/i.test(q);
+    try {
+      return window.localStorage.getItem("hk-weekend-kids") === "1";
+    } catch (e) {}
+    return false;
+  }
+  function writeUrl(lang, kidsOn) {
+    try {
+      var url = new URL(window.location.href);
+      url.searchParams.set("lang", lang);
+      if (kidsOn) url.searchParams.set("kids", "1");
+      else url.searchParams.delete("kids");
+      window.history.replaceState(null, "", url);
+    } catch (e) {}
+  }
+  function applyKids(on, lang) {
+    on = !!on;
+    document.documentElement.classList.toggle("is-kids", on);
+    document.querySelectorAll("article.event").forEach(function (el) {
+      el.hidden = on && el.getAttribute("data-kids") !== "yes";
+    });
+    document.querySelectorAll("figure.fig").forEach(function (fig) {
+      fig.hidden = on && fig.getAttribute("data-kids") !== "yes";
+    });
+    document.querySelectorAll("nav.toc a[href^='#ev-']").forEach(function (a) {
+      var id = a.getAttribute("href").slice(1);
+      var ev = document.getElementById(id);
+      a.hidden = !!(on && ev && ev.hidden);
+    });
+    var toc = document.querySelector("nav.toc");
+    if (toc) {
+      var nodes = Array.prototype.slice.call(toc.children);
+      nodes.forEach(function (node, i) {
+        if (!node.classList.contains("sec-label")) return;
+        var any = false;
+        for (var j = i + 1; j < nodes.length; j++) {
+          if (nodes[j].classList.contains("sec-label")) break;
+          if (nodes[j].tagName === "A" && !nodes[j].hidden) { any = true; break; }
+        }
+        node.hidden = on && !any;
+      });
+      toc.hidden = on && !toc.querySelector("a[href^='#ev-']:not([hidden])");
+    }
+    document.querySelectorAll("section.sec").forEach(function (sec) {
+      sec.hidden = on && !sec.querySelector("article.event:not([hidden])");
+    });
+    document.querySelectorAll(".catnav a").forEach(function (a) {
+      var href = a.getAttribute("href") || "";
+      if (href.charAt(0) !== "#") return;
+      var sec = document.getElementById(href.slice(1));
+      a.hidden = !!(on && sec && sec.hidden);
+    });
+    var btn = document.querySelector("[data-toggle-kids]");
+    if (btn) {
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+      btn.classList.toggle("is-active", on);
+    }
+    lang = normalize(lang) || normalize(document.documentElement.getAttribute("data-lang")) || currentLang();
+    var pack = packFor(lang);
+    var dek = document.querySelector(".dek");
+    if (dek && pack) {
+      var key = on && pack["kids.dek"] ? "kids.dek" : "dek";
+      if (pack[key] != null) dek.textContent = pack[key];
+    }
+    try { window.localStorage.setItem("hk-weekend-kids", on ? "1" : "0"); } catch (e) {}
+    writeUrl(lang, on);
+  }
+  function applyLang(lang) {
+    lang = normalize(lang) || "en";
+    if (typeof window.HKWeekendI18N !== "object" || !window.HKWeekendI18N[lang]) return;
+    var pack = window.HKWeekendI18N[lang];
+    document.documentElement.lang = lang === "zh" ? "zh-Hant" : lang;
+    document.documentElement.setAttribute("data-lang", lang);
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n");
+      if (pack[key] == null) return;
+      if (el.getAttribute("data-i18n-html") === "true") el.innerHTML = pack[key];
+      else el.textContent = pack[key];
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-alt");
+      if (pack[key] != null) el.setAttribute("alt", pack[key]);
+    });
+    document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-aria");
+      if (pack[key] != null) el.setAttribute("aria-label", pack[key]);
+    });
+    if (pack._title) document.title = pack._title;
+    var meta = document.querySelector('meta[name="description"]');
+    if (meta && pack._desc) meta.setAttribute("content", pack._desc);
+    document.querySelectorAll(".lang-toggle [data-set-lang]").forEach(function (btn) {
+      var on = btn.getAttribute("data-set-lang") === lang;
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+      btn.classList.toggle("is-active", on);
+    });
+    try { window.localStorage.setItem("hk-weekend-lang", lang); } catch (e) {}
+    applyKids(currentKids(), lang);
+  }
+  window.setWeekendLang = applyLang;
+  document.addEventListener("click", function (e) {
+    var langBtn = e.target.closest("[data-set-lang]");
+    if (langBtn) {
+      e.preventDefault();
+      applyLang(langBtn.getAttribute("data-set-lang"));
+      return;
+    }
+    var kidsBtn = e.target.closest("[data-toggle-kids]");
+    if (kidsBtn) {
+      e.preventDefault();
+      applyKids(!currentKids());
+    }
+  });
+  document.addEventListener("DOMContentLoaded", function () { applyLang(currentLang()); });
+  applyLang(currentLang());
+})();
+</script>
+</body>
+</html>
